@@ -241,15 +241,16 @@ section {
 /*About*/
 .about-container {
   padding-top: 3.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 .about-container .left-about {
-  padding-right: 5rem;
+  padding-right: 0rem;
 }
 .about-container .left-about p {
   line-height: 2rem;
   padding: 1rem;
   color: var(--color-grey-1);
+  text-align: center;
 }
 .about-container .left-about h4 {
   font-size: 2rem;
@@ -261,8 +262,9 @@ section {
 }
 .about-stats .skill-icons {
   display: flex;
-  width: 500px;
-  height: 100%;
+  margin-left: 300px;
+  width: 350px;
+  height: auto;
 }
 .about-stats .skill-icons .skill-icon {
   border: 1px solid var(--color-grey-5);
@@ -497,7 +499,6 @@ section {
 }
 
 .contact-content-con {
-  display: flex;
   padding-top: 3.5rem;
 }
 .contact-content-con .left-contact {
@@ -597,6 +598,11 @@ section {
   align-self: flex-start;
 }
 
+#about-cv-download {
+  margin-left: 355px;
+  margin-top: 35px;
+}
+
 .main-btn {
   border-radius: 30px;
   color: inherit;
@@ -658,4 +664,26 @@ section {
   transform: translate(-50%, -50%);
   font-weight: 800;
   font-size: 6.3rem;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+  }
+  header .right-header {
+    padding: 2rem !important;
+  }
+  .controlls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controlls .control {
+    margin: 1rem 0.3rem;
+  }
+}/*# sourceMappingURL=styled.css.map */
