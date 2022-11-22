@@ -7,7 +7,7 @@
 
 :root {
   --color-primary: #191d2b;
-  --color-secondary: #27ae60;
+  --color-secondary: #d291bc;
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -22,8 +22,8 @@
 }
 
 .light-mode {
-  --color-primary: #ffffff;
-  --color-secondary: #f56692;
+  --color-primary: #f7f7f7;
+  --color-secondary: #c96ba9;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -204,9 +204,9 @@ section {
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
-  height: 90%;
-  width: 68%;
-  margin-left: 4rem;
+  height: 50%;
+  width: 50%;
+  margin-left: 7.5rem;
   background-color: var(--color-black);
   transition: all 0.4s ease-in-out;
 }
@@ -216,16 +216,13 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.4s ease-in-out;
-  filter: grayscale(100%);
-}
-.header-content .left-header .image img:hover {
-  filter: grayscale(0);
 }
 .header-content .right-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-right: 18rem;
+  margin-left: -5rem;
 }
 .header-content .right-header .name {
   font-size: 3rem;
@@ -296,25 +293,8 @@ section {
   left: 50%;
   top: 0;
   width: 40%;
-  height: 1px;
-  background-color: var(--color-grey-5);
-  transform: translateX(-50%);
-}
-
-.stat-title {
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  text-align: center;
-  padding: 3.5rem 0;
-  position: relative;
-}
-.stat-title::before {
-  content: "";
-  left: 50%;
-  top: 0;
-  width: 40%;
-  height: 1px;
-  background-color: var(--color-grey-5);
+  height: 0.5px;
+  background-color: var(--color-grey-1);
   transform: translateX(-50%);
 }
 
@@ -530,6 +510,9 @@ section {
   display: flex;
   align-items: center;
   font-size: 1.3rem;
+}
+.contact-content-con .left-contact .contact-icons {
+  margin-left: 350px;
 }
 .contact-content-con .left-contact .contact-icon {
   display: flex;

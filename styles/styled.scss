@@ -7,7 +7,7 @@
 
 :root {
   --color-primary: #191d2b;
-  --color-secondary: #27ae60;
+  --color-secondary: #d291bc;
   --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -22,8 +22,8 @@
 }
 
 .light-mode {
-  --color-primary: #ffffff;
-  --color-secondary: #f56692;
+  --color-primary: #f7f7f7;
+  --color-secondary: #c96ba9;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -193,9 +193,9 @@ section {
     }
     .image {
       border-radius: var(--br-sm-2);
-      height: 90%;
-      width: 68%;
-      margin-left: 4rem;
+      height: 50%;
+      width: 50%;
+      margin-left: 7.5rem;
       background-color: var(--color-black);
       transition: all 0.4s ease-in-out;
       img {
@@ -203,10 +203,6 @@ section {
         height: 100%;
         object-fit: cover;
         transition: all 0.4s ease-in-out;
-        filter: grayscale(100%);
-        &:hover {
-          filter: grayscale(0);
-        }
       }
     }
   }
@@ -216,6 +212,7 @@ section {
     flex-direction: column;
     justify-content: center;
     padding-right: 18rem;
+    margin-left: -5rem;
     .name {
       font-size: 3rem;
       span {
@@ -334,25 +331,8 @@ section {
     left: 50%;
     top: 0;
     width: 40%;
-    height: 1px;
-    background-color: var(--color-grey-5);
-    transform: translateX(-50%);
-  }
-}
-
-.stat-title {
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  text-align: center;
-  padding: 3.5rem 0;
-  position: relative;
-  &::before {
-    content: "";
-    left: 50%;
-    top: 0;
-    width: 40%;
-    height: 1px;
-    background-color: var(--color-grey-5);
+    height: 0.5px;
+    background-color: var(--color-grey-1);
     transform: translateX(-50%);
   }
 }
@@ -574,6 +554,10 @@ section {
           }
         }
       }
+    }
+
+    .contact-icons {
+      margin-left: 350px;
     }
 
     .contact-icon {
