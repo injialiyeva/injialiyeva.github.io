@@ -1,6 +1,7 @@
 @media screen and (max-width: 600px) {
   header {
     padding: 0;
+    min-height: 100vh;
   }
   header .right-header {
     padding: 2rem !important;
@@ -21,7 +22,7 @@
     .h-shape {
       display: none;
     }
-    margin-top: -10rem;
+    margin-top: 0rem;
   }
 
   .right-header {
@@ -36,6 +37,53 @@
   .header-content .left-header .image {
     margin: 0 auto;
     width: 90%;
+    height: 100% !important;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    .left-about {
+      padding-right: 0;
+      p {
+        padding-left: 0;
+      }
+    }
+  }
+
+  .timeline {
+    padding-bottom: 6rem;
+  }
+
+  .about-stats {
+    .skill-icons {
+      margin-left: 4.5rem;
+    }
+  }
+
+  .portfolios {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+
+  .blogs {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+
+  .contact-content-con {
+    .contact-icons {
+      margin-left: 9rem !important;
+    }
+  }
+
+  .section {
+    padding: 2rem 2.5rem;
+  }
+
+  .main-title {
+    h2 {
+      font-size: 3rem;
+    }
   }
 
   .controlls {
@@ -50,5 +98,12 @@
     .control {
       margin: 1rem 0.3rem;
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .right-header {
+    padding: 2rem 8rem 2rem 2rem !important;
+    margin-right: 3rem !important;
   }
 }
